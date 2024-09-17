@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import genericUtility.Base_Class;
+import objectRepository.HoddiesPage;
 import objectRepository.Home_Page;
 import objectRepository.Jackets_Class;
 import objectRepository.Login_Page;
@@ -16,7 +17,11 @@ public class Women_Product extends Base_Class{
 	{
 		Home_Page hp=new Home_Page(driver);
 		hp.womenproductOnTop(driver);
-		Jackets_Class js=new Jackets_Class(driver);
-		js.operationOnJackets();
+	//	Jackets_Class js=new Jackets_Class(driver);
+	//	js.operationOnJackets();
+		HoddiesPage hds=new HoddiesPage(driver);
+		hds.operationOnHoddies();
+	
+		
 	}
 }

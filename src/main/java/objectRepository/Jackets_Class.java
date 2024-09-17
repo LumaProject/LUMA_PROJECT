@@ -6,10 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Jackets_Class {
+	
 @FindBy(xpath = "(//a[@id='mode-list'])[1]")
 private WebElement list;
+
 @FindBy(xpath = "//div[text()='Style']")
 private WebElement style;
+
 @FindBy(xpath = "//a[contains(@href,'https://magento.softwaretestingboard.com/women/"
 		+ "tops-women/jackets-women.html?product_list_mode=list&style_general=119')]")
 private WebElement lightweight;
